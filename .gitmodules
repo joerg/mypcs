@@ -1,0 +1,6 @@
+[submodule "cookbooks/admin-essentials"]
+	path = cookbooks/admin-essentials
+	url = git@github.com:joerg/chef-admin-essentials.git
+[submodule "cookbooks/apt-repo"]
+	path = cookbooks/apt-repo
+	url = git@github.com:joerg/chef-apt-repo.git
