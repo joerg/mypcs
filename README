@@ -1,0 +1,8 @@
+This Chef recipie configures my PCs.
+
+TODO;
+	- Install lvm2
+	- Set Keyboard
+	- Remove Pulseaudio (check if hdmi sound works)
+	- install graphics drivers
+	- disable all sounds
