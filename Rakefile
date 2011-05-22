@@ -6,5 +6,5 @@ task :install do
      `git submodule init`
      `git submodule update`
      puts "Execute Chef"
-     `sudo EDITOR="${EDITOR}" chef-solo -c solo_config.rb`
+     `sudo EDITOR="${EDITOR}" chef-solo -c contrib/solo_config.rb`
 end
