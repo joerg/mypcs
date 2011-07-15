@@ -6,6 +6,7 @@ What you need to run this:
 	Git
 
 TODO;
+	- Add Chef Repo
 	- Install lvm2
 	- Set Keyboard
 	- Remove Pulseaudio (check if hdmi sound works)
@@ -13,3 +14,5 @@ TODO;
 	- disable all sounds
 	- Install Kerberos and OpenAFS
 	- Install XBMC
+	- NTP
+	- Check TRIM for SSDs (http://en.wikipedia.org/wiki/TRIM)
