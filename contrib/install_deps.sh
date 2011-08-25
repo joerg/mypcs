@@ -4,9 +4,10 @@
 # Credits for thsi go to sometimesfood on GitHub
 keyserver=keys.gnupg.net
 opscode_key_id=83EF826A
+release=$(lsb_release -cs)
 
 echo 'Adding Opscode repo to sources.list.d...'
-echo 'deb http://apt.opscode.com/ lucid main' \
+echo "deb http://apt.opscode.com/ ${release}-0.10 main" \
     | sudo tee /etc/apt/sources.list.d/opscode.list > /dev/null
 echo 'Adding Opscode key to trusted keyring...'
 sudo apt-key adv --keyserver ${keyserver} --recv-keys ${opscode_key_id} > /dev/null
