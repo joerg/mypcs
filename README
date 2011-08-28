@@ -5,8 +5,7 @@ What you need to run this:
 	Chef Solo
 	Git
 
-TODO;
-	- Add Chef Repo
+TODO:
 	- Install lvm2
 	- Set Keyboard
 	- Remove Pulseaudio (check if hdmi sound works)
