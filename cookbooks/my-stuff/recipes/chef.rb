@@ -8,4 +8,6 @@ apt_repo "opscode" do
   components "main"
 end
 
-#package chef
+%w( chef libshadow-ruby1.8 ).each do |p|
+  package p
+end
