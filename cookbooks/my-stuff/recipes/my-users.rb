@@ -5,5 +5,7 @@ node.default["my-stuff"]["users"].each do |user_name, user_data|
     comment user_data[0]
     password user_data[1]
     shell "/bin/zsh"
+    home "/home/#{user_name}"
+    supports :manage_home => true
   end
 end
