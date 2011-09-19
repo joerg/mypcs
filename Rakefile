@@ -2,9 +2,24 @@
 task :default => [ :install ]
 
 task :submodules do
-     puts "Fetch submodules"
-     system 'git submodule init'
-     system 'git submodule update'
+  puts "Fetch submodules"
+  current = Dir.pwd
+  if File.directory?("cookbooks/admin-essentials") 
+    Dir.chdir("cookbooks/admin-essentials") do
+      system 'git pull'
+    end
+  else
+    system 'git clone https://github.com/sometimesfood/chef-admin-essentials.git cookbooks/admin-essentials'
+  end
+
+  if File.directory?("cookbooks/apt-repo") 
+    Dir.chdir("cookbooks/apt-repo") do
+      system 'git pull'
+    end
+  else
+    system 'git clone https://github.com/sometimesfood/chef-apt-repo.git cookbooks/apt-repo'
+  end
+
 end
 
 task :get_users do

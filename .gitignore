@@ -1,2 +1,4 @@
 *~
 cookbooks/my-stuff/attributes/my-users.rb
+cookbooks/admin-essentials
+cookbooks/apt-repo
