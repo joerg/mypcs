@@ -1,5 +1,7 @@
 package "flashplugin-installer"
 
+ppa "videolan/master-daily"
+
 %w( vlc gnome-mplayer exaile qwbfsmanager).each do |p|
   package p
 end
